@@ -75,7 +75,6 @@ document.getElementById("clear-btn").addEventListener("click", function () {
     historyData.length = 0; // reset array properly
     document.getElementById("history").innerHTML = "";
 });
-
 // copy button function
 let copyCounter = 2;
 const copyButton = document.querySelectorAll(".copy-button");
@@ -92,7 +91,6 @@ for (const copy of copyButton) {
         } catch (e) {
             alert("Copy failed!");
         }
-
         const copyNumbers = document.getElementById("copy-number");
         copyCounter++;
         copyNumbers.innerText = copyCounter;
